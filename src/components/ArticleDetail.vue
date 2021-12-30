@@ -6,6 +6,11 @@
     </p>
     <h6>Publish Date: {{article.date}} </h6>
 
+    <router-link :to="{name: 'articledit', params:{id:id}}"
+    class="btn btn-success mt-3"
+    > Update
+
+    </router-link>
     <button
     class="btn btn-danger mx-3 mt-3"
     @click="deleteArticle"
@@ -13,6 +18,10 @@
 
     Delete
     </button>
+
+
+
+    
 
   </div>
 </template>

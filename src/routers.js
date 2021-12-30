@@ -2,6 +2,7 @@ import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/components/Home";
 import CreateArticle from "@/components/CreateArticle";
 import ArticleDetail from "./components/ArticleDetail";
+import ArticleEdit from "./components/ArticleEdit";
 
 
 const routes = [
@@ -23,7 +24,15 @@ const routes = [
         component:ArticleDetail,
         props:true
 
+    },
+    {
+        path: '/edit/:id',
+        name: "articledit",
+        component:ArticleEdit,
+        props:true
+
     }
+
 
 ]
 
