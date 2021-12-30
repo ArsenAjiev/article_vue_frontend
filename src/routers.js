@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "@/components/Home";
 import CreateArticle from "@/components/CreateArticle";
+import ArticleDetail from "./components/ArticleDetail";
 
 
 const routes = [
@@ -16,6 +17,13 @@ const routes = [
         component:CreateArticle
 
     },
+         {
+        path: '/details/:id',
+        name: "details",
+        component:ArticleDetail,
+        props:true
+
+    }
 
 ]
 
