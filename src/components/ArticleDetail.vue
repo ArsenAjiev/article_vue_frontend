@@ -42,7 +42,7 @@ export default {
   name: "ArticleDetails",
   methods: {
     deleteArticle() {
-      fetch(`http://127.0.0.1:5000/delete/${this.id}`, {
+      fetch(`https://articleflask.herokuapp.com/delete/${this.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type":"application/json",
@@ -59,7 +59,7 @@ export default {
     });
     },
     getArticleData(){
-            fetch(`http://127.0.0.1:5000/get/${this.id}`, {
+            fetch(`https://articleflask.herokuapp.com/get/${this.id}`, {
         method: "GET",
         headers: {
           "Content-Type":"application/json",

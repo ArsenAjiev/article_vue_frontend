@@ -56,7 +56,7 @@ export default {
         }
         else {
           console.warn("data exist")
-        fetch(`http://127.0.0.1:5000/put/${this.id}`, {
+        fetch(`https://articleflask.herokuapp.com/put/${this.id}`, {
         method: "PUT",
         headers:{
           "Content-Type": "application/json",
@@ -78,7 +78,7 @@ export default {
 
   beforeRouteEnter(to, from, next) {
     if(to.params.id !== undefined) {
-      fetch(`http://127.0.0.1:5000/get/${to.params.id}`, {
+      fetch(`https://articleflask.herokuapp.com/get/${to.params.id}`, {
         method: "GET",
         headers:{
           "Content-Type": "application/json",
